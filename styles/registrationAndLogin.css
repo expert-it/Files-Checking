@@ -1,0 +1,162 @@
+
+/************************************************* Login Form *************************************************/
+#nav .navbar-collapse.collapse {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;	
+} 
+
+
+#nav .navbar-collapse.collapse input.mini {
+	margin-top :0px;	
+	width:150px; 
+	margin-bottom: 0px;
+}
+
+#nav .navbar-collapse.collapse  input.mini.left { 
+	margin-top :0px;
+	margin-right:12px;
+	margin-bottom: 0px;	
+}
+
+#nav .navbar-collapse.collapse button {
+	margin-top :0px;
+		
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    padding-bottom: 0px;
+  
+}
+#nav input { 
+	padding: 5px 5px; 
+	color: #787878; 
+	font-family: Arial, Helvetica, sans-serif; 
+	margin-top: 8px; 
+	font-size: 15px; 
+	border: 1px solid #ccc; 
+	outline: none; 
+}
+.btn-success {
+	background: #428bca;
+	background-image:-webkit-linear-gradient(top, #3399FF, #4F67A4); 
+	width: 75px;
+	border: 1px solid #1D3871; 
+}
+
+.btn-success:hover {
+	background: #428bca;
+	background-image:-webkit-linear-gradient(top, #3399FF, #4F67A4); 
+	border: 1px solid #1D3871; 
+
+}
+#nav button { 
+-moz-box-shadow: 1px 1px 3px #1D3871; 
+	-webkit-box-shadow: 1px 1px 3px #1D3871;
+	box-shadow: 1px 1px 3px #1D3871; 
+	font-family:	'Helvetica Neue', Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+}
+
+/************************************************* End Login Form *************************************************/
+
+
+/************************************************* Registeration Form *************************************************/
+
+.register-form {
+	margin: 4px auto; 
+	/*text-align:right;*/
+	/*padding-top:100px;*/
+}
+
+ul.nav.nav-tabs.login-nav {
+	padding-left:60px;
+}
+.register-box input.mini { 
+	padding-right: 10px;
+}
+.register-box input.mini.left { 
+}
+
+
+.register-box input { 
+	padding: 12px 10px; 
+	color: #787878; 
+	font-family: Arial, Helvetica, sans-serif; 
+	margin-top: 8px; 
+	font-size: 15px; 
+	border: 1px solid #ccc; 
+	outline: none;
+	width:100%;
+}
+.validation {
+	color: #A94442;
+	padding: 8px;
+}
+button { 
+	background: #428bca;
+	background-image:-webkit-linear-gradient(top, #3399FF, #4F67A4); 
+	padding: 10px 20px; 
+	font-size: 18px; 
+	border: 1px solid #1D3871; 
+	letter-spacing: 1px; 
+	color: #fff; 
+	width: 100%; 
+	line-height:30px; 
+	font-family:	'Helvetica Neue', Helvetica, Arial, sans-serif;
+	-moz-box-shadow: 1px 1px 3px #1D3871; 
+	-webkit-box-shadow: 1px 1px 3px #1D3871;
+	box-shadow: 1px 1px 3px #1D3871; 
+	cursor: pointer;
+}
+
+
+/************************************************* End Registeration Form *************************************************/
+
+
+/************************************************* Graphic Block  *************************************************/
+
+.headlines {
+	margin-top : 50px;
+	margin-bottom : 20px;
+}
+
+.headline-img{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 50px;
+}
+
+.headline-txt{
+  height: 90px;
+  line-height: 90px;
+}
+.headline-txt span{
+  vertical-align: middle;
+  line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

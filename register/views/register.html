@@ -1,0 +1,105 @@
+<div class="register-box radius">
+	<div class="register-form">
+		<div class = "col-sm-12">
+			<ul class="nav nav-tabs login-nav">
+				<li role="presentation" data-ng-class ="(register.isDisplayPersonal)? register.active : ' '">
+					<a href="" data-ng-mousedown = "register.displayPersonal()">{{::register.constant.labels.personal}}</a>
+				</li>
+				<li role="presentation" data-ng-class ="(register.isDisplayBusiness)? register.active : ' '">
+					<a href="" data-ng-mousedown = "register.displayBusiness()">{{::register.constant.labels.business}}</a>
+				</li>
+			</ul>
+		</div>
+		<form id="registerPersonal" name="registerPersonal" data-ng-if = "register.isDisplayPersonal">
+			<div id = "register-alert" class = "col-sm-12 " data-ng-if="register.showAlert"><div class = "alert alert-danger">{{register.alert}}</div></div>
+			<div class = "col-sm-6">
+				<input type="text" id="firstNamePer" name="firstNamePer" placeholder="{{::register.constant.placeHolders.firstName}}"
+				data-ng-pattern="register.constant.regExp.alphanumericPattern" required data-ng-model ="register.model.personal.firstName" class="radius mini left" />
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.firstNamePer.$error.required && registerPersonal.firstNamePer.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.firstNamePer.$error.pattern && registerPersonal.firstNamePer.$touched">{{::register.constant.validations.wrongStringFormat}}</span>
+
+			</div>
+			<div  class = "col-sm-6">
+				<input type="text" id="lastNamePer" name="lastNamePer" placeholder="{{::register.constant.placeHolders.lastName}}"
+				required data-ng-pattern="register.constant.regExp.alphanumericPattern" data-ng-model ="register.model.personal.lastName" class="radius mini" />
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.lastNamePer.$error.required && registerPersonal.lastNamePer.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.lastNamePer.$error.pattern && registerPersonal.lastNamePer.$touched">{{::register.constant.validations.wrongStringFormat}}</span>
+			</div>
+			<div class = "col-sm-12">
+				<input type="text" id="emailPer" name="emailPer"  placeholder="{{::register.constant.placeHolders.yourEmail}}" required
+				data-ng-pattern="register.constant.regExp.emailPattern" data-ng-model ="register.model.personal.email" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.emailPer.$error.required && registerPersonal.emailPer.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.emailPer.$error.pattern && registerPersonal.emailPer.$touched">{{::register.constant.validations.emailFormat}}</span>
+			</div>
+			<div class = "col-sm-12">
+
+				<input type="password" id="passwordPer" name="passwordPer" placeholder="{{::register.constant.placeHolders.newPassword}}"
+				required data-ng-pattern ="register.constant.regExp.strongPassword" data-ng-model ="register.model.personal.password" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.passwordPer.$error.required && registerPersonal.passwordPer.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.passwordPer.$error.pattern && registerPersonal.passwordPer.$touched">{{::register.constant.validations.passwordStrength}}</span>
+			</div>
+			<div class = "col-sm-12">
+
+				<input type="password" id="verifyPasswordPer" name="verifyPasswordPer" placeholder="{{::register.constant.placeHolders.reEnterPassword}}"
+				required data-ng-pattern ="register.constant.regExp.strongPassword" data-ng-model ="register.model.personal.verifyPassword" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.verifyPasswordPer.$error.required && registerPersonal.verifyPasswordPer.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerPersonal.verifyPasswordPer.$error.pattern && registerPersonal.verifyPasswordPer.$touched">{{::register.constant.validations.passwordStrength}}</span>
+			</div>
+			<div class = "col-sm-12">
+
+				<button class="radius title" name="register" data-ng-click = "register.submitForm(register.model.personal, registerPersonal)">
+					{{::register.constant.buttons.submit}}
+				</button>
+			</div>
+		</form>
+		<form id="registerBusiness" name="registerBusiness" data-ng-if = "register.isDisplayBusiness">
+			<div id = "register-alert" class = "col-sm-12 " data-ng-if="register.showAlert"><div class = "alert alert-danger">{{register.alert}}</div></div>			
+			<div class = "col-sm-12">
+				<input type="text" id="companyBus" name="companyBus" placeholder="{{::register.constant.placeHolders.company}}"
+				required data-ng-pattern="register.constant.regExp.alphanumericPattern" data-ng-model ="register.model.business.company" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.companyBus.$error.required && registerBusiness.companyBus.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.companyBus.$error.pattern && registerBusiness.companyBus.$touched">{{::register.constant.validations.wrongStringFormat}}</span>
+			</div>
+			<div class = "col-sm-6">
+				<input type="text" id="firstNameBus" name="firstNameBus" placeholder="{{::register.constant.placeHolders.firstName}}"
+				required data-ng-pattern="register.constant.regExp.alphanumericPattern" data-ng-model ="register.model.business.firstName" class="radius mini left" />
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.firstNameBus.$error.required && registerBusiness.firstNameBus.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.firstNameBus.$error.pattern && registerBusiness.firstNameBus.$touched">{{::register.constant.validations.wrongStringFormat}}</span>
+
+			</div>
+			<div class = "col-sm-6">
+				<input type="text" id="lastNameBus" name="lastNameBus" placeholder="{{::register.constant.placeHolders.lastName}}"
+				required data-ng-pattern="register.constant.regExp.alphanumericPattern" data-ng-model ="register.model.business.lastName" class="radius mini" />
+				<span class="radius mini left" data-ng-show = "registerBusiness.lastNameBus.$error.required && registerBusiness.lastNameBus.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left" data-ng-show = "registerBusiness.lastNameBus.$error.pattern && registerBusiness.lastNameBus.$touched">{{::register.constant.validations.wrongStringFormat}}</span>
+			</div>
+			<div class = "col-sm-12">
+				<input type="text" id="emailBus" name="emailBus" placeholder="{{::register.constant.placeHolders.yourEmail}}"
+				required data-ng-pattern="register.constant.regExp.emailPattern" data-ng-model ="register.model.business.email" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.emailBus.$error.required && registerBusiness.emailBus.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.emailBus.$error.pattern && registerBusiness.emailBus.$touched">{{::register.constant.validations.emailFormat}}</span>
+			</div>
+			<div class = "col-sm-12">
+
+				<input type="password" id="passwordBus"  name="passwordBus" placeholder="{{::register.constant.placeHolders.newPassword}}"
+				required data-ng-pattern ="register.constant.regExp.strongPassword" data-ng-model ="register.model.business.password" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.passwordBus.$error.required && registerBusiness.passwordBus.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.passwordBus.$error.pattern && registerBusiness.passwordBus.$touched">{{::register.constant.validations.passwordStrength}}</span>
+			</div>
+			<div class = "col-sm-12">
+
+				<input type="password" id="verifyPasswordBus"  name="verifyPasswordBus" placeholder="{{::register.constant.placeHolders.reEnterPassword}}"
+				required data-ng-pattern ="register.constant.regExp.strongPassword" data-ng-model ="register.model.business.verifyPassword" class="radius" />
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.verifyPasswordBus.$error.required && registerBusiness.$error.verifyPasswordBus.$touched">{{::register.constant.validations.required}}</span>
+				<span class="radius mini left validation" data-ng-show = "registerBusiness.verifyPasswordBus.$error.pattern && registerBusiness.$error.verifyPasswordBus.$touched">{{::register.constant.validations.passwordStrength}}</span>
+
+			</div>
+			<div class = "col-sm-12">
+
+				<button class="radius title" name="register" data-ng-mousedown = "register.submitForm(register.model.business, registerBusiness)">
+					{{::register.constant.buttons.submit}}
+				</button>
+			</div>
+		</form>
+	</div>
+</div>

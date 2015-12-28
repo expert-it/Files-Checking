@@ -1,0 +1,14 @@
+<div class="modal-header">
+	<h3 class="modal-title">{{::modal.header}}</h3>
+</div>
+<div class="modal-body">
+{{::modal.body}}
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" data-ng-show = "modal.showSubmit" ng-click="$dismiss()">
+		{{::modal.submitButtonName}}
+	</button>
+	<button class="btn btn-warning" type="button" data-ng-show = "modal.showCancel" ng-click="">
+		{{::modal.cancelButtonName}}
+	</button>
+</div>

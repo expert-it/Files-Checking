@@ -1,0 +1,15 @@
+<div id="navbar" class="navbar-collapse collapse col-md-5">
+	<div class ="col-sm-12">
+		<form class="navbar-form navbar-right">
+			<div class="form-group">
+				<input type="text" placeholder="Email" class = "radius mini left" data-ng-model = "login.model.email" />
+			</div>
+			<div class="form-group">
+				<input type="password" placeholder="Password" class = "radius mini left" data-ng-model = "login.model.loginpwd" />
+			</div>
+			<button type="submit" class="btn btn-success" data-ng-click = "login.submit(login.model)">
+				{{::login.constants.buttons.submit}}
+			</button>
+		</form>
+	</div>
+</div>
