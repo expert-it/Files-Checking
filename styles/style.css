@@ -34,7 +34,7 @@ header {
 	width:100%;
 	padding-top:50px;
 	color: #000000;
-	height:70px;
+	height:50px;
 }
 header h1 {
 	font-size: 60px;
@@ -169,13 +169,14 @@ footer h4 {
 	margin-bottom: 30px;
 }
 #copyright {
-	padding-bottom: 20px;
-	padding-top: 20px;
-	background: #F2F2F2;
-	color: #000000;
-	border-top: 1px solid rgba(51, 51, 51, 0.23);
-    border-top-width: 1px;
+    background: #333 none repeat scroll 0 0;
+    border-top: 1px solid rgba(51, 51, 51, 0.23);
+    color: #fff;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 20px;
     text-align: center;
+    width: 100%;
 }
 
 #register-alert .alert {

@@ -12,14 +12,14 @@
 		</div>
 		<form id="registerPersonal" name="registerPersonal" data-ng-if = "register.isDisplayPersonal">
 			<div id = "register-alert" class = "col-sm-12 " data-ng-if="register.showAlert"><div class = "alert alert-danger">{{register.alert}}</div></div>
-			<div class = "col-sm-6">
+			<div class = "col-sm-12">
 				<input type="text" id="firstNamePer" name="firstNamePer" placeholder="{{::register.constant.placeHolders.firstName}}"
 				data-ng-pattern="register.constant.regExp.alphanumericPattern" required data-ng-model ="register.model.personal.firstName" class="radius mini left" />
 				<span class="radius mini left validation" data-ng-show = "registerPersonal.firstNamePer.$error.required && registerPersonal.firstNamePer.$touched">{{::register.constant.validations.required}}</span>
 				<span class="radius mini left validation" data-ng-show = "registerPersonal.firstNamePer.$error.pattern && registerPersonal.firstNamePer.$touched">{{::register.constant.validations.wrongStringFormat}}</span>
 
 			</div>
-			<div  class = "col-sm-6">
+			<div  class = "col-sm-12">
 				<input type="text" id="lastNamePer" name="lastNamePer" placeholder="{{::register.constant.placeHolders.lastName}}"
 				required data-ng-pattern="register.constant.regExp.alphanumericPattern" data-ng-model ="register.model.personal.lastName" class="radius mini" />
 				<span class="radius mini left validation" data-ng-show = "registerPersonal.lastNamePer.$error.required && registerPersonal.lastNamePer.$touched">{{::register.constant.validations.required}}</span>
