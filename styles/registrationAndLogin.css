@@ -1,346 +1,527 @@
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 /************************************************* Login Form *************************************************/
 #nav .navbar-collapse.collapse {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
-	margin-top: 0px;	
-} 
-
-
+	margin-top: 0px;
+}
 #nav .navbar-collapse.collapse input.mini {
-	margin-top :0px;	
-	width:150px; 
+	margin-top : 0px;
+	width: 150px;
 	margin-bottom: 0px;
 }
-
-#nav .navbar-collapse.collapse  input.mini.left { 
-	margin-top :0px;
-	margin-right:12px;
-	margin-bottom: 0px;	
+#nav .navbar-collapse.collapse input.mini.left {
+	margin-top : 0px;
+	margin-right: 12px;
+	margin-bottom: 0px;
 }
-
 #nav .navbar-collapse.collapse button {
-	margin-top :0px;
-		
+	margin-top : 0px;
 }
-
 #nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:10;
-    padding-bottom: 0px;
-  
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	padding-bottom: 0px;
 }
-#nav input { 
-	padding: 5px 5px; 
-	color: #787878; 
-	font-family: Arial, Helvetica, sans-serif; 
-	margin-top: 8px; 
-	font-size: 15px; 
-	border: 1px solid #ccc; 
-	outline: none; 
+#nav input {
+	padding: 5px 5px;
+	color: #787878;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 8px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	outline: none;
 }
 .btn-success {
 	background: #428bca;
-	background-image:-webkit-linear-gradient(top, #3399FF, #4F67A4); 
+	background-image: -webkit-linear-gradient(top, #3399FF, #4F67A4);
 	width: 75px;
-	border: 1px solid #1D3871; 
+	border: 1px solid #1D3871;
 }
-
 .btn-success:hover {
 	background: #428bca;
-	background-image:-webkit-linear-gradient(top, #3399FF, #4F67A4); 
-	border: 1px solid #1D3871; 
-
+	background-image: -webkit-linear-gradient(top, #3399FF, #4F67A4);
+	border: 1px solid #1D3871;
 }
-#nav button { 
--moz-box-shadow: 1px 1px 3px #1D3871; 
+#nav button {
+	-moz-box-shadow: 1px 1px 3px #1D3871;
 	-webkit-box-shadow: 1px 1px 3px #1D3871;
-	box-shadow: 1px 1px 3px #1D3871; 
-	font-family:	'Helvetica Neue', Helvetica, Arial, sans-serif;
+	box-shadow: 1px 1px 3px #1D3871;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	letter-spacing: 1px;
 }
-
 /************************************************* End Login Form *************************************************/
 
 
 /************************************************* Registeration Form *************************************************/
 
 .register-form {
-	margin: 4px auto; 
-	/*text-align:right;*/
+	margin: 4px auto;/*text-align:right;*/
 	/*padding-top:100px;*/
 }
-
-ul.nav.nav-tabs.login-nav {
-	padding-left:60px;
+.nav-tabs > li > a {
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 25px;
+	margin-right: 2px;
 }
-.register-box input.mini { 
+ul.nav.nav-tabs.login-nav {
+ padding-left:;
+}
+.register-box input.mini {
 	padding-right: 10px;
 }
-.register-box input.mini.left { 
+.register-box input.mini.left {
 }
-
-
-.register-box input { 
-	padding: 12px 10px; 
-	color: #787878; 
-	font-family: Arial, Helvetica, sans-serif; 
-	margin-top: 8px; 
-	font-size: 15px; 
-	border: 1px solid #ccc; 
+.register-box input {
+	padding: 12px 10px;
+	color: #787878;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 8px;
+	font-size: 15px;
+	border: 1px solid #ccc;
 	outline: none;
-	width:100%;
+	width: 100%;
 }
 .validation {
 	color: #A94442;
 	padding: 8px;
 }
-button { 
+button {
 	background: #428bca;
-	background-image:-webkit-linear-gradient(top, #3399FF, #4F67A4); 
-	padding: 10px 20px; 
-	font-size: 18px; 
-	border: 1px solid #1D3871; 
-	letter-spacing: 1px; 
-	color: #fff; 
-	width: 100%; 
-	line-height:30px; 
-	font-family:	'Helvetica Neue', Helvetica, Arial, sans-serif;
-	-moz-box-shadow: 1px 1px 3px #1D3871; 
+	background-image: -webkit-linear-gradient(top, #3399FF, #4F67A4);
+	padding: 10px 20px;
+	font-size: 18px;
+	border: 1px solid #1D3871;
+	letter-spacing: 1px;
+	color: #fff;
+	width: 100%;
+	line-height: 30px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	-moz-box-shadow: 1px 1px 3px #1D3871;
 	-webkit-box-shadow: 1px 1px 3px #1D3871;
-	box-shadow: 1px 1px 3px #1D3871; 
+	box-shadow: 1px 1px 3px #1D3871;
 	cursor: pointer;
 }
-
-
+.regis_col {
+	background: #428bca none repeat scroll 0 0;
+	box-shadow: 1px 1px 3px #1d3871;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-size: 21px;
+	font-weight: 400;
+	border-radius: 3px;
+	letter-spacing: 0;
+	padding: 28px 85px 4px;
+}
+.regis_col:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #333;
+}
+#livicon-4 > span {
+	font-style: normal;
+	position: relative;
+	top: -12px;
+}
+.icon_section > p {
+	margin-top: 70px;
+}
+.navbar-toggle {
+	box-shadow: none !important;
+	width: auto;
+}
+#navbar form {
+	border: medium none !important;
+	padding: 0;
+}
+#navbar {
+	float: right;
+}
 /************************************************* End Registeration Form *************************************************/
 
 
 /************************************************* Graphic Block  *************************************************/
 
 .headlines {
-    margin-bottom: 20px;
-    margin-top: 0;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
-
-.headline-img{
+.headline-img {
 	padding-bottom: 20px;
 	padding-top: 20px;
 	font-size: 50px;
 }
-
-.headline-txt{
-  height: 90px;
-  line-height: 90px;
+.headline-txt {
+	height: 90px;
+	line-height: 90px;
 }
-.headline-txt span{
-  vertical-align: middle;
-  line-height: normal;
+.headline-txt span {
+	vertical-align: middle;
+	line-height: normal;
 }
-
-
-
-
+.icon_section {
+	background: #f9f9f9 none repeat scroll 0 0;
+	padding: 100px 0;
+}
+.icon_section li {
+	list-style: outside none none;
+	text-align: center;
+}
+.icon_section h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 35px;
+	font-weight: 300;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.icon_section h3 span {
+	font-weight: 600;
+}
+.icon_back {
+	background: rgba(255,255,255,1.00);
+	border: 1px solid #e0e0e0;
+	padding: 50px 0;
+}
+.icon_back:hover {
+	background: rgba(255,255,255,1.00);
+	border: 1px solid #428bca;
+	padding: 50px 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
 .col-md-7.headlines > ul {
-    display: inline-block;
-    list-style: outside none none;
-    padding: 0;
+	display: inline-block;
+	list-style: outside none none;
+	padding: 0;
 }
 .icons_col {
-    border: 1px solid #cecece;
-    border-collapse: collapse;
-    float: left;
-    margin-left: -1px;
-    padding-top: 20px;
-    text-align: center;
-    width: 210px;
+	border: 1px solid #cecece;
+	border-collapse: collapse;
+	float: left;
+	margin-left: -1px;
+	padding-top: 20px;
+	text-align: center;
+	width: 210px;
 }
 .col-md-7.headlines li {
-    display: inline;
-}
-svg {
-    height: 90px;
-    margin: auto;
+	display: inline;
 }
 svg#Capa_1 {
-	height:auto;
-    margin: auto;
+	height: auto;
+	margin: auto;
 }
-
 .headline-txt span {
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: normal;
-    vertical-align: middle;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: normal;
+	text-transform: uppercase;
+	vertical-align: middle;
 }
 .headline-txt {
-    height: auto;
-    line-height: 60px;
-    padding-bottom: 3px;
+	height: auto;
+	line-height: 60px;
+	padding-bottom: 3px;
 }
 .banner_col {
-    background: #fff none repeat scroll 0 0;
-    margin-top: 0;
-    padding-bottom: 20px;
-    padding-top: 40px;
+	background: url(../images/banner.jpg) no-repeat;
+	margin-top: 0;
+	padding-bottom: 20px;
+	padding-top: 40px;
+	width: 100%;
+	height: 558px;
 }
-
+.form_col {
+	margin: auto;
+	max-width: 100%;
+	overflow: hidden;
+	position: relative;
+	top: 114px;
+	width: 470px;
+}
 /************************************************* End Graphic Block *************************************************/
 
 
 /************************************************* Three Sections  *************************************************/
 
 .eko-drive {
-    background: #627894 none repeat scroll 0 0;
-    min-height: 300px;
-     padding-bottom: 70px;
-    padding-top: 70px;
-    text-align: center;
+	background: #627894 none repeat scroll 0 0;
+	min-height: 430px;
+	padding-bottom: 70px;
+	padding-top: 70px;
+	text-align: center;
 }
 .eko-drive h2 {
-    color: #fff;
-    font-size: 41px;
-    margin-bottom: 0;
-    text-align: center;
-    text-transform: uppercase;
+	color: #fff;
+	font-size: 41px;
+	margin-bottom: 0;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
 	-webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-     -o-transition: all 0.5s linear;
-        transition: all 0.5s linear;
-    width: 100%;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	width: 100%;
 }
 .eko-drive h3 {
-    color: #fff;
-    font-size: 22px;
+	color: #fff;
+	font-size: 22px;
 	margin-bottom: 15px;
-	margin-top:5px;
-    text-align: center;
+	margin-top: 5px;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	font-style: normal;
 	-webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-     -o-transition: all 0.5s linear;
-        transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
-
 .eko-drive svg {
-    height: auto;
-    margin: auto;
-    width: 100px;
+	height: auto;
+	margin: auto;
 	-webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-     -o-transition: all 0.5s linear;
-        transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
 .accordionButton {
-    width:100%;
-    float:left;
-	    border-bottom: 1px solid #FFFFFF;
-    cursor: pointer;
-    font-size:1.3em;
-
+	width: 100%;
+	float: left;
+	cursor: pointer;
+	font-size: 1.3em;
 }
 .accordionButton span {
-    color:#FFFFFF;
-    font-weight:bold;
+	color: #FFFFFF;
+	font-weight: bold;
 }
 .accordionContent {
-    float: left;
-    padding: 0 0 20px;
-    width: 100%;
+	float: left;
+	padding: 0 0 20px;
+	width: 100%;
 }
 .eko-drive_content p {
-    color: #333;
-    padding: 0;
+	color: #333;
+	padding: 0;
 }
 .on {
-    width:100%;
-    float:left;
-    background:#555555;
-    cursor:pointer;}
-    .on span {color:#FFFFFF;}
+	width: 100%;
+	float: left;
+	background: #555555;
+	cursor: pointer;
+}
+.on span {
+	color: #FFFFFF;
+}
 .over {
-    width:100%;
-    float:left;
-    background:#555555;
-    cursor:pointer;}
-    .over span {color:#FFFFFF;}
- 
+	width: 100%;
+	float: left;
+	background: #555555;
+	cursor: pointer;
+}
+.over span {
+	color: #FFFFFF;
+}
 .plusMinus {
-    font-weight:bold;
-    content:"+";
-    border:1px solid #fff;
-    border-radius:50%;
-    padding: 5px 10px;
+	font-weight: bold;
+	content: "+";
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 5px 10px;
 }
 .on .plusMinus {
-    border-radius: 50%;
-    content: "+";
-    font-weight: bold;
-    padding: 1px 10px 5px;
+	border-radius: 50%;
+	content: "+";
+	font-weight: bold;
+	padding: 1px 10px 5px;
 }
 .on svg {
-    height: auto;
-    margin: auto;
-    width: 60px !important;
+	height: auto;
+	margin: auto;
 	-webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-     -o-transition: all 0.5s linear;
-        transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
 .on h2 {
-    color: #fff;
-    font-size: 24px;
+	color: #fff;
+	font-size: 24px;
 	-webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-     -o-transition: all 0.5s linear;
-        transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
 }
-.on  {
-    background: #627894 none repeat scroll 0 0;
-    min-height: 240px;
-    padding-bottom: 30px;
-    padding-top: 40px;
-    text-align: center;
- 
-	
+.on {
+	background: #627894 none repeat scroll 0 0;
+	min-height: 240px;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	text-align: center;
 }
 .arrow_col {
-    background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 40px auto;
-    bottom: 10px;
-    height: 36px;
-    left: 0;
-    margin: -8px auto auto;
-    position: relative;
-    right: 0;
-    transition: all 0s linear 0s;
-    width: 40px;
+	background: rgba(0, 0, 0, 0) url("../images/arrow.png") no-repeat scroll 0 0 / 40px auto;
+	bottom: 10px;
+	height: 36px;
+	left: 0;
+	margin: -8px auto auto;
+	position: relative;
+	right: 0;
+	transition: all 0s linear 0s;
+	width: 40px;
 }
-.eko-drive_content{background:rgba(255,255,255,1.00);}
-.eko-drive_content p{color:#333;
+.eko-drive_content {
+	background: rgba(255,255,255,1.00);
+}
+.eko-drive_content p {
+	color: #333;
 }
 . eko-drive_content h3 {
-    font-size: 28px;
-    text-transform: uppercase;
+ font-size: 28px;
+ text-transform: uppercase;
+}
+.narrow_blue {
+	background: #428bca;
+}
+.light_blue {
+	background: #9ab0b6;
+}
+.dark_blue {
+	background: #2d3c4d;
 }
 
-.narrow_blue{background:#428bca;}
-.narrow_blue:hover{background:#555;}
-.light_blue{background:#293741;}
-.light_blue:hover{background:#555;}
-.dark_blue{background:#ee841b;}
-.dark_blue:hover{background:#555;}
+
+/************************************************* End Three Sections *************************************************/
+
+
+/************************************************* Responsive CSS  *************************************************/
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+#nav .navbar-collapse.collapse input.mini {
+	float: left;
+	margin-bottom: 7px !important;
+	margin-top: 0;
+	width: 100%;
+}
+#nav .navbar-collapse.collapse button {
+	float: right;
+	margin-bottom: 12px;
+	margin-top: 0;
+}
+.icon_section {
+	background: #f9f9f9 none repeat scroll 0 0;
+	padding: 10px 0;
+}
+.icon_section h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-align: center;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.icon_back {
+	background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+	border: 1px solid #e0e0e0;
+	padding: 50px 0;
+}
+.regis_col {
+	padding: 27px 36px 2px;
+}
+.icon_section > p {
+	margin-top: 46px;
+}
+.eko-drive h2 {
+	font-size: 30px;
+}
+.eko-drive h3 {
+	font-size: 18px;
+}
+.eko-drive {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	min-height: 340px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+#nav .navbar-collapse.collapse input.mini {
+	float: left;
+	margin-bottom: 7px !important;
+	margin-top: 0;
+	width: 100%;
+	max-width: 38%;
+}
+#nav .navbar-collapse.collapse button {
+	float: left;
+	margin-bottom: 12px;
+	margin-top: 0;
+}
+.icon_section {
+	background: #f9f9f9 none repeat scroll 0 0;
+	padding: 10px 0;
+}
+.icon_section h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-align: center;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.icon_back {
+	background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+	border: 1px solid #e0e0e0;
+	padding: 50px 0;
+}
+.regis_col {
+	padding: 27px 36px 2px;
+}
+.icon_section > p {
+	margin-top: 46px;
+}
+.eko-drive h2 {
+	font-size: 30px;
+}
+.eko-drive h3 {
+	font-size: 18px;
+}
+.eko-drive {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	min-height: 340px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+.headline-txt span {
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+.icon_section {
+	background: #f9f9f9 none repeat scroll 0 0;
+	padding: 20px 0;
+}
+}
 
 
 
-
-
-
-
-
-
-
-
+/************************************************* End Responsive CSS *************************************************/
 
