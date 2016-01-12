@@ -59,8 +59,7 @@
 /************************************************* Registeration Form *************************************************/
 
 .register-form {
-	margin: 4px auto;/*text-align:right;*/
-	/*padding-top:100px;*/
+	margin: 4px auto;/*text-align:right;*//*padding-top:100px;*/
 }
 .nav-tabs > li > a {
 	border: 1px solid transparent;
@@ -400,7 +399,6 @@ svg#Capa_1 {
 	background: #2d3c4d;
 }
 
-
 /************************************************* End Three Sections *************************************************/
 
 
@@ -524,4 +522,3 @@ ul {
 
 
 /************************************************* End Responsive CSS *************************************************/
-

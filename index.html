@@ -1,234 +1,162 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Ekonium Home Page</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-		<!-- build:css(app) styles/vendor.css -->
-		<!-- bower:css -->
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-		<link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" />
-		<!-- endbower -->
-		<!-- endbuild -->
-		<!-- build:css(app) styles/main.css -->
-		<link rel="stylesheet" href="styles/style.css">
-		<link rel="stylesheet" href="styles/registrationAndLogin.css">
-		<link rel="stylesheet" href="styles/blockModule.css">
-		<!-- endbuild -->
-	</head>
-	<body>
-		<!--[if lte IE 8]>
+<head>
+<meta charset="utf-8">
+<title>Ekonium Home Page</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css(app) styles/vendor.css -->
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" />
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:css(app) styles/main.css -->
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/registrationAndLogin.css">
+<link rel="stylesheet" href="styles/blockModule.css">
+<!-- endbuild -->
+</head>
+<body>
+<!--[if lte IE 8]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<header>
-			<div id="nav">
-				<nav class="navbar navbar-default navbar-inverse navbar-fixed-top affix-top" role="navigation">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="container" style ="padding-bottom: 0px;">
-						
-						<div class="navbar-header col-md-6">
-
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a id = "logo" href="#">Ekonium</a>
+<header>
+		<div id="nav">
+				<nav class="navbar navbar-default navbar-inverse navbar-fixed-top affix-top" role="navigation"> 
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="container" style ="padding-bottom: 0px;">
+								<div class="navbar-header col-md-6">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+										<a id = "logo" href="#">Ekonium</a> </div>
+								<!-- log in form --> 
+								
+								<!--<div eko-sign-in-dir ></div>  see /sign-in/views/sign-in.html -->
+								
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<div eko-sign-in-dir ></div>
+								</div>
 						</div>
-						<!-- log in form -->
-						 
-						<!--<div eko-sign-in-dir ></div>  see /sign-in/views/sign-in.html -->
- 
- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       
-<div eko-sign-in-dir ></div>
-    
-       
-    </div>
-					</div>
-					
-
-					
 				</nav>
-			</div>
-		</header>
-		
- 
-		<!--<div class="banner_col">
+		</div>
+</header>
+
+<!--<div class="banner_col">
 		
 			<div class ="form_col">
 						<div eko-register-dir ></div> 
 				</div>
 		
 		</div>-->
-		
-		 
-		
-		
-		<section class="icon_section">
-		
+
+<section class="icon_section">
 		<div class="container">
-		
-		<h3>Cloud Portal for <span>Small and Medium</span> Enterprises</h3>
-		
-			<ul>
-					<li> 
-						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 icon_back">
-						<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="inbox-empty" data-s="80" data-c="#428BCA" data-hc="#ee841b" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
-							<div class = "col-xs-12 headline-txt top">
-							<span><label>Eko</label> Drive</span>
-						</div>
-						</i>
-						</div>
-						
-					 </li>
-					
-					
-					<li>
-					
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 icon_back">
-						<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="piggybank" data-s="80" data-c="#428BCA" data-hc="#ee841b" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
-							<div class = "col-xs-12 headline-txt top">
-							<span><label>Eko</label> Wallet</span>
-						</div>
-						</i>
-						</div>
-					
-					
-					 </li>
-					
-					
-					
-					<li>
-					
-					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 icon_back">
-						<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="credit-card" data-s="80" data-c="#428BCA" data-hc="#ee841b" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
-							<div class = "col-xs-12 headline-txt top">
-							<span><label>Eko</label> Pos & Billing</span>
-						</div>
-						</i>
-						</div>
-					
-					 </li>
-					
+				<h3>Cloud Portal for <span>Small and Medium</span> Enterprises</h3>
+				<ul>
+						<li>
+								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 icon_back"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="inbox-empty" data-s="80" data-c="#428BCA" data-hc="#ee841b" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
+										<div class = "col-xs-12 headline-txt top"> <span>
+												<label>Eko</label>
+												Drive</span> </div>
+										</i> </div>
+						</li>
+						<li>
+								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 icon_back"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="piggybank" data-s="80" data-c="#428BCA" data-hc="#ee841b" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
+										<div class = "col-xs-12 headline-txt top"> <span>
+												<label>Eko</label>
+												Wallet</span> </div>
+										</i> </div>
+						</li>
+						<li>
+								<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 icon_back"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="credit-card" data-s="80" data-c="#428BCA" data-hc="#ee841b" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
+										<div class = "col-xs-12 headline-txt top"> <span>
+												<label>Eko</label>
+												Pos & Billing</span> </div>
+										</i> </div>
+						</li>
 				</ul>
 		</div>
+		<p align="center"> <a href="#" class="regis_col"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="angle-double-right" data-s="40" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0"> <span>Registration Now</span> </i></a> </p>
+</section>
+<div class = "container" >
+		<div class ="col-md-7 headlines"> </div>
+		<!--reg form --> 
 		
-		<p align="center">
-		<a href="#" class="regis_col">
-		<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="angle-double-right" data-s="40" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
- <span>Registration Now</span>
-</i></a>
-		</p>
-		
-		</section>
-		
-		
-		
-		<div class = "container" >
-				<div class ="col-md-7 headlines">
-				 
-			  	
-				</div>
-				<!--reg form -->
-				
-		</div>
-		
-		
-	 
-		
-		
-		
-		<div class="accordionButton eko-drive narrow_blue" >
-    <div class="container">
-			<div class="row">
-			<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="inbox-empty" data-s="100" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
-			<h2>Eko Drive</h2>
-			<h3>Cloud storage for your business</h3>
-			<br>
-<br>
-</i>
-			</div>
-		</div>
-    <span class="plusMinus">+</span>
-	
 </div>
-<div class="accordionContent eko-drive_content">
-<div class="arrow_col"></div>
-<div class="container">
-<h3>Neque porro quisquam est qui dolorem ipsum</h3>
-<h4>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-		specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
-          <p>Maecenas tempor leo luctus erat luctus adipiscing. </p><p>Quisque eu elit dapibus, lobortis arcu iaculis, dapibus felis. Curabitur ac ipsum at libero semper dictum. </p>
-   </div></div>  
-      
-	<div class="accordionButton eko-drive light_blue" >
-    <div class="container">
-			<div class="row">
-			<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="piggybank" data-s="100" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0"> 
-			<h2>Eko Wallet</h2>
-			<h3>Online Payment processor for your Business<br><br>
-
-Coming Soon</h3>
-			</i>
-			</div>
+<div class="accordionButton eko-drive narrow_blue" >
+		<div class="container">
+				<div class="row"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="inbox-empty" data-s="100" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
+						<h2>Eko Drive</h2>
+						<h3>Cloud storage for your business</h3>
+						<br>
+						<br>
+						</i> </div>
 		</div>
-    <span class="plusMinus">+</span>
-</div>
+		<span class="plusMinus">+</span> </div>
 <div class="accordionContent eko-drive_content">
-<div class="arrow_col"></div>
-<div class="container">
-<h3>Neque porro quisquam est qui dolorem ipsum</h3>
-<h4>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-		specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
-          <p>Maecenas tempor leo luctus erat luctus adipiscing. </p><p>Quisque eu elit dapibus, lobortis arcu iaculis, dapibus felis. Curabitur ac ipsum at libero semper dictum. </p>
-   </div></div>  
-      
-	<div class="accordionButton eko-drive dark_blue" >
-    <div class="container">
-			<div class="row">
-			<i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="credit-card" data-s="100" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0"> 
-			<h2>Eko Pos & Billing</h2>
-			<h3>Robust point of sale and billing system of your Business<br><br>
-
-Coming Soon</h3>
-			</i>
-			</div>
+		<div class="arrow_col"></div>
+		<div class="container">
+				<h3>Neque porro quisquam est qui dolorem ipsum</h3>
+				<h4>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+						specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
+				<p>Maecenas tempor leo luctus erat luctus adipiscing. </p>
+				<p>Quisque eu elit dapibus, lobortis arcu iaculis, dapibus felis. Curabitur ac ipsum at libero semper dictum. </p>
 		</div>
-    <span class="plusMinus">+</span>
 </div>
+<div class="accordionButton eko-drive light_blue" >
+		<div class="container">
+				<div class="row"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="piggybank" data-s="100" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
+						<h2>Eko Wallet</h2>
+						<h3>Online Payment processor for your Business<br>
+								<br>
+								Coming Soon</h3>
+						</i> </div>
+		</div>
+		<span class="plusMinus">+</span> </div>
 <div class="accordionContent eko-drive_content">
-<div class="arrow_col"></div>
-<div class="container">
-<h3>Neque porro quisquam est qui dolorem ipsum</h3>
-<h4>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-		specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
-          <p>Maecenas tempor leo luctus erat luctus adipiscing. </p><p>Quisque eu elit dapibus, lobortis arcu iaculis, dapibus felis. Curabitur ac ipsum at libero semper dictum. </p>
-   </div></div>  
-         
-      
- 
-   
-		
-		
-		
-		<!-- replace with block module content -->
-		 
-		<footer id="copyright">
-			<p>
-				Copright by @Ekonium 2015, All right reserved.
-			</p>
-		</footer>
+		<div class="arrow_col"></div>
+		<div class="container">
+				<h3>Neque porro quisquam est qui dolorem ipsum</h3>
+				<h4>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+						specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
+				<p>Maecenas tempor leo luctus erat luctus adipiscing. </p>
+				<p>Quisque eu elit dapibus, lobortis arcu iaculis, dapibus felis. Curabitur ac ipsum at libero semper dictum. </p>
+		</div>
+</div>
+<div class="accordionButton eko-drive dark_blue" >
+		<div class="container">
+				<div class="row"> <i class="livicon edit_col" data-toggle="tooltip" data-placement="middle" data-name="credit-card" data-s="100" data-c="#fff" data-hc="#fff" data-a="1" data-l="0" data-i="1" data-d="0" data-et="hover" data-op="0">
+						<h2>Eko Pos & Billing</h2>
+						<h3>Robust point of sale and billing system of your Business<br>
+								<br>
+								Coming Soon</h3>
+						</i> </div>
+		</div>
+		<span class="plusMinus">+</span> </div>
+<div class="accordionContent eko-drive_content">
+		<div class="arrow_col"></div>
+		<div class="container">
+				<h3>Neque porro quisquam est qui dolorem ipsum</h3>
+				<h4>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+						specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
+				<p>Maecenas tempor leo luctus erat luctus adipiscing. </p>
+				<p>Quisque eu elit dapibus, lobortis arcu iaculis, dapibus felis. Curabitur ac ipsum at libero semper dictum. </p>
+		</div>
+</div>
 
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-		<script>
+<!-- replace with block module content -->
+
+<footer id="copyright">
+		<p> Copright by @Ekonium 2015, All right reserved. </p>
+</footer>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> 
+<script>
 			! function(A, n, g, u, l, a, r) {
 				A.GoogleAnalyticsObject = l, A[l] = A[l] ||
 				function() {
@@ -241,30 +169,30 @@ Coming Soon</h3>
 
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
-		</script>
+		</script> 
 
-		<!-- build:js(.tmp) scripts/vendor.js -->
-		
-		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<script src="json2.min.js"></script>
-		<script src="livicons-1.3.min.js"></script>
-		<script src="raphael-min.js"></script>
-		<script src="bower_components/angular/angular.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script src="bower_components/angular-animate/angular-animate.js"></script>
-		<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-		<script src="bower_components/angular-resource/angular-resource.js"></script>
-		<script src="bower_components/angular-route/angular-route.js"></script>
-		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-		<script src="bower_components/angular-touch/angular-touch.js"></script>
-		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-		<script src="bower_components/requirejs/require.js"></script>
-		<!-- endbuild -->
+<!-- build:js(.tmp) scripts/vendor.js --> 
 
-		<!-- build:js(.tmp) scripts/scripts.js -->
-	  <!-- <script src="ekoGuiModule.js"></script> -->   
-		<script src="app.js"></script>
-	
-		<!-- endbuild -->
-	</body>
+<script src="bower_components/jquery/dist/jquery.js"></script> 
+<script src="json2.min.js"></script> 
+<script src="livicons-1.3.min.js"></script> 
+<script src="raphael-min.js"></script> 
+<script src="bower_components/angular/angular.js"></script> 
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script> 
+<script src="bower_components/angular-animate/angular-animate.js"></script> 
+<script src="bower_components/angular-cookies/angular-cookies.js"></script> 
+<script src="bower_components/angular-resource/angular-resource.js"></script> 
+<script src="bower_components/angular-route/angular-route.js"></script> 
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script> 
+<script src="bower_components/angular-touch/angular-touch.js"></script> 
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script> 
+<script src="bower_components/requirejs/require.js"></script> 
+<!-- endbuild --> 
+
+<!-- build:js(.tmp) scripts/scripts.js --> 
+<!-- <script src="ekoGuiModule.js"></script> --> 
+<script src="app.js"></script> 
+
+<!-- endbuild -->
+</body>
 </html>
